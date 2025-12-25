@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mini Recipe Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f4f4f4;
+        }
+
+        header {
+            background: #9843ffff;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav {
+            background: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ff7043;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .recipe {
+            background: white;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .recipe img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 6px;
+        }
+
+        h2 {
+            color: #ff7043;
+        }
+
+        ul, ol {
+            padding-left: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>🍽️ Mini Recipe Website</h1>
+    <p>Delicious recipes made simple</p>
+</header>
+
+<nav>
+    <a href="#biryani">Biryani</a>
+    <a href="#paneer">Paneer</a>
+    <a href="#dosa">Dosa</a>
+    <a href="#chicken">Chicken</a>
+    <a href="#cake">Cake</a>
+</nav>
+<div class="container">
+    <div class="recipe" id="biryani">
+        <img src="biriyani.jpg" alt="Veg Biryani">
+        <h2>Vegetable Biryani</h2>
+        <h3>Ingredients</h3>
+        <ul>
+            <li>Basmati rice</li>
+            <li>Mixed vegetables</li>
+            <li>Spices</li>
+            <li>Onions</li>
+        </ul>
+        <h3>Steps</h3>
+        <ol>
+            <li>Cook rice partially</li>
+            <li>Prepare vegetable masala</li>
+            <li>Layer rice and masala</li>
+            <li>Cook on low flame</li>
+        </ol>
+    </div>
+    <div class="recipe" id="paneer">
+        <img src="paneer.jpg" alt="Paneer Butter Masala">
+        <h2>Paneer Butter Masala</h2>
+        <h3>Ingredients</h3>
+        <ul>
+            <li>Paneer</li>
+            <li>Tomato puree</li>
+            <li>Butter</li>
+            <li>Cream</li>
+        </ul>
+        <h3>Steps</h3>
+        <ol>
+            <li>Prepare tomato gravy</li>
+            <li>Add spices and butter</li>
+            <li>Add paneer cubes</li>
+            <li>Garnish with cream</li>
+        </ol>
+    </div>
+    <div class="recipe" id="dosa">
+        <img src="dosa.jpg" alt="Masala Dosa">
+        <h2>Masala Dosa</h2>
+        <h3>Ingredients</h3>
+        <ul>
+            <li>Dosa batter</li>
+            <li>Potatoes</li>
+            <li>Onions</li>
+            <li>Spices</li>
+        </ul>
+        <h3>Steps</h3>
+        <ol>
+            <li>Prepare potato filling</li>
+            <li>Spread batter on pan</li>
+            <li>Add filling</li>
+            <li>Fold and serve hot</li>
+        </ol>
+    </div>
+    <div class="recipe" id="chicken">
+        <img src="chicken.jpg" alt="Chicken Curry">
+        <h2>Chicken Curry</h2>
+        <h3>Ingredients</h3>
+        <ul>
+            <li>Chicken</li>
+            <li>Onions</li>
+            <li>Tomatoes</li>
+            <li>Spices</li>
+        </ul>
+        <h3>Steps</h3>
+        <ol>
+            <li>Sauté onions</li>
+            <li>Add tomatoes and spices</li>
+            <li>Add chicken</li>
+            <li>Cook till done</li>
+        </ol>
+    </div>
+    <div class="recipe" id="cake">
+        <img src="cake.jpg" alt="Chocolate Cake">
+        <h2>Chocolate Cake</h2>
+        <h3>Ingredients</h3>
+        <ul>
+            <li>Flour</li>
+            <li>Cocoa powder</li>
+            <li>Sugar</li>
+            <li>Eggs</li>
+        </ul>
+        <h3>Steps</h3>
+        <ol>
+            <li>Mix dry ingredients</li>
+            <li>Add wet ingredients</li>
+            <li>Bake at 180°C</li>
+            <li>Cool and serve</li>
+        </ol>
+    </div>
+
+</div>
+</body>
+</html>
